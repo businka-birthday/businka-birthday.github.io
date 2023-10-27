@@ -10,9 +10,27 @@
 <body>
     <div class="container">
         <h1>С Днем Рождения!</h1>
-        <p>Дорогая бусинка, желаю тебе счастья, здоровья и удачи во всех начинаниях.</p>
-        <p>Я подготовила для тебя особый подарок — сертификат! Нажми на кнопку ниже, чтобы открыть свой подарок.</p>
-        <a href="certificate.html" class="gift-button">Открыть сертификат</a>
+        <p>Дорогая бусинка, желаю тебе всего самого лучшего и круглого, а чтобы у тебя было еще больше круглого </br>
+            и тебе было легко кататься, я хочу подарить тебе одну вещь.</p>
+        <p>Чтобы открыть свой особый подарок, тебе нужно ответить на один вопрос ниже:)</p>
     </div>
+    <div class="container">
+        <h1>Тест: Кто самая лучшая бусинка на свете?</h1>
+        <form id="quiz-form">
+            <p><label><input type="radio" name="answer" value="correct"> Я</label></p>
+            <p><label><input type="radio" name="answer" value="wrong1"> Ожерелья из бусинок</label></p>
+            <p><label><input type="radio" name="answer" value="wrong2"> Юля</label></p>
+            <button  id="button" type="button" onclick="checkAnswer()">Отправить</button>
+        </form>
+        <div id="warning" class="hidden">
+            <p>Неправильный ответ. Попробуйте еще раз!</p>
+        </div>
+        <div id="correct_button" class="hidden">
+<!--            <button type="button" href="certificate.html">Открыть подарок</button>-->
+            <a href="certificate.html" class="gift-button">Открыть подарок</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
