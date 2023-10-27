@@ -2,24 +2,25 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #e8e7e8;
     margin: 0;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    position: relative;
+    /*position: relative;*/
     overflow: hidden;
     background-image: url('back.jpeg');
     /*background-size: 100% 100%;*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    overflow-y: scroll;
 }
 
 .container {
     background-color: #ffffff;
     padding: 40px 40px 40px 40px;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 10% 20px 10%;
 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
